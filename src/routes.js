@@ -28,5 +28,12 @@ export const routes = [
       database.insert("users", user)
       return res.writeHead(201).end()
     }
+  },
+  {
+    method: 'DELETE',
+    path: '/users',
+    handler: (req, res) => {
+      return res.end()
+    }
   }
 ]
